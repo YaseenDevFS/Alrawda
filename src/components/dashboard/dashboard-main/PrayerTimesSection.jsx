@@ -105,7 +105,7 @@ function PrayerTimesSection() {
   };
 
   if (loading) return (
-    <div className="px-4 py-6">
+    <div className="px-5 py-6">
       <div className="bg-gradient-to-br from-black/90 via-emerald-950/30 to-black/90 rounded-2xl p-6 border border-emerald-500/20">
         <div className="animate-pulse space-y-4">
           <div className="h-6 bg-emerald-500/20 rounded w-1/4"></div>
@@ -132,7 +132,7 @@ function PrayerTimesSection() {
   );
 
   return (
-    <div className="py-6">
+    <div className="py-6 px-1">
       <div className="mb-6">
         <div className="flex items-center justify-between flex-wrap gap-3 mb-2">
           <div>

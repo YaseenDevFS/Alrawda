@@ -23,7 +23,7 @@ function FromCommunity() {
   ];
 
   return (
-    <div className="py-10 z-50 px-2">
+    <div className="py-10 z-50 px-1">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">

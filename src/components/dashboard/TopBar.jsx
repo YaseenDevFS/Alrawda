@@ -150,71 +150,11 @@ const TopBar = () => {
             </div>
           </div>
 
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 bg-emerald-500/10 backdrop-blur-sm rounded-lg text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-all duration-300"
-          >
-            <Menu size={18} />
-          </button>
+
         </div>
       </header>
 
-      {/* Mobile Search Bar */}
-      {isSearchOpen && (
-        <div className="md:hidden fixed top-16 left-0 right-0 z-40 px-4 py-3 bg-gradient-to-r from-emerald-950/95 to-emerald-900/95 backdrop-blur-md border-b border-emerald-500/20 animate-slideDown">
-          <div className="relative">
-            <div className="absolute inset-y-0 left-2 flex items-center pointer-events-none">
-              <Search size={18} className="text-gray-500" />
-            </div>
-            <input
-              type="text"
-              placeholder="Search Quran, prayers..."
-              className="w-full bg-emerald-500/10 rounded-lg py-2.5 pl-8 pr-3 text-sm text-gray-300 placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-emerald-500/50"
-              autoFocus
-            />
-          </div>
-        </div>
-      )}
-
-      {/* Mobile Menu Drawer */}
-      {isMobileMenuOpen && (
-        <>
-          <div
-            className="fixed inset-0 bg-black/50 z-40 lg:hidden animate-fadeIn"
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          <div className="fixed left-0 top-16 bottom-0 w-64 bg-gradient-to-b from-emerald-950/95 to-emerald-900/95 backdrop-blur-md border-r border-emerald-500/20 z-40 animate-slideRight">
-            <div className="p-4 space-y-2">
-              <div className="mb-6 p-4 bg-emerald-500/10 rounded-lg">
-                <p className="text-emerald-400 text-xs">Assalamu Alaikum,</p>
-                <p className="text-white font-bold text-lg">{userData?.name || 'Guest'}</p>
-                {userData?.email && (
-                  <p className="text-gray-400 text-xs mt-1">{userData.email}</p>
-                )}
-              </div>
-
-              <nav className="space-y-1">
-                <a href="/" className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-emerald-500/10 rounded-lg transition-all">
-                  <span>🏠</span>
-                  <span>Home</span>
-                </a>
-                <a href="/quran" className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-emerald-500/10 rounded-lg transition-all">
-                  <span>📖</span>
-                  <span>Quran</span>
-                </a>
-                <a href="/prayer-times" className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-emerald-500/10 rounded-lg transition-all">
-                  <span>🕌</span>
-                  <span>Prayer Times</span>
-                </a>
-                <a href="/settings" className="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-white hover:bg-emerald-500/10 rounded-lg transition-all">
-                  <span>⚙️</span>
-                  <span>Settings</span>
-                </a>
-              </nav>
-            </div>
-          </div>
-        </>
-      )}
+     
 
       <style jsx>{`
         @keyframes slideDown {

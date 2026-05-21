@@ -53,7 +53,7 @@ function Ayah() {
   }
 
   return (
-    <div className="px-2">
+    <div className="px-1">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
