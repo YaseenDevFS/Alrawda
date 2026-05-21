@@ -22,7 +22,7 @@ function SignupPage() {
       setError("");
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://alrawda-backend.vercel.app/api/auth/signup",
         {
           name,
           email,

@@ -35,7 +35,7 @@ function ProfilePage() {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/api/auth/me', {
+        const response = await fetch('https://alrawda-backend.vercel.app/api/auth/me', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -96,7 +96,7 @@ function ProfilePage() {
     if (!token) return;
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/profile', {
+      const response = await fetch('https://alrawda-backend.vercel.app/api/auth/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

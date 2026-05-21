@@ -42,7 +42,7 @@ const TopBar = () => {
         }
 
         console.log("Fetching user data from /api/auth/me");
-        const res = await axios.get("http://localhost:5000/api/auth/me", {
+        const res = await axios.get("https://alrawda-backend.vercel.app/api/auth/me", {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'

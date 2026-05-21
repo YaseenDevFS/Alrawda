@@ -21,7 +21,7 @@ function LoginPage() {
       setError("");
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://alrawda-backend.vercel.app/api/auth/login",
         {
           email,
           password,
